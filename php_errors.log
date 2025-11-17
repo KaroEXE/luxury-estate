@@ -1,0 +1,101 @@
+[13-Nov-2025 17:26:02 Europe/Berlin] === New Request ===
+[13-Nov-2025 17:26:02 Europe/Berlin] Request URI: /properties.php?action=list
+[13-Nov-2025 17:26:02 Europe/Berlin] PHP Warning:  require_once(includes/auth.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\properties.php on line 14
+[13-Nov-2025 17:26:02 Europe/Berlin] Error: Array
+(
+    [success] => 
+    [message] => An error occurred
+    [error] => Failed opening required 'includes/auth.php' (include_path='C:\xampp\php\PEAR')
+    [file] => C:\xampp\htdocs\properties.php
+    [line] => 14
+    [trace] => #0 {main}
+)
+
+[13-Nov-2025 17:26:55 Europe/Berlin] === New Request ===
+[13-Nov-2025 17:26:55 Europe/Berlin] Request URI: /properties.php?action=list
+[13-Nov-2025 17:26:55 Europe/Berlin] PHP Warning:  require_once(includes/auth.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\auth.php on line 3
+[13-Nov-2025 17:26:55 Europe/Berlin] Error: Array
+(
+    [success] => 
+    [message] => An error occurred
+    [error] => Failed opening required 'includes/auth.php' (include_path='C:\xampp\php\PEAR')
+    [file] => C:\xampp\htdocs\auth.php
+    [line] => 3
+    [trace] => #0 C:\xampp\htdocs\properties.php(14): require_once()
+#1 {main}
+)
+
+[13-Nov-2025 17:27:33 Europe/Berlin] === New Request ===
+[13-Nov-2025 17:27:33 Europe/Berlin] Request URI: /properties.php?action=list
+[13-Nov-2025 17:28:43 Europe/Berlin] === New Request ===
+[13-Nov-2025 17:28:43 Europe/Berlin] Request URI: /properties.php?action=list
+[13-Nov-2025 17:29:56 Europe/Berlin] === New Request ===
+[13-Nov-2025 17:29:56 Europe/Berlin] Request URI: /properties.php?action=list
+[13-Nov-2025 17:30:32 Europe/Berlin] === New Request ===
+[13-Nov-2025 17:30:32 Europe/Berlin] Request URI: /properties.php?action=list
+[13-Nov-2025 17:34:59 Europe/Berlin] === New Request ===
+[13-Nov-2025 17:34:59 Europe/Berlin] Request URI: /properties.php?action=list
+[13-Nov-2025 17:40:24 Europe/Berlin] === New Request ===
+[13-Nov-2025 17:40:24 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 18:42:18 Europe/Berlin] === New Request ===
+[17-Nov-2025 18:42:18 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:00:12 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:00:12 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:00:15 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:00:15 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:01:06 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:01:06 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:01:25 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:01:25 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:04:07 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:04:07 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:05:57 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:05:57 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:06:03 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:06:03 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:06:13 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:06:13 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:06:23 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:06:23 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:06:32 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:06:32 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:06:37 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:06:37 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:08:32 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:08:32 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:09:38 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:09:38 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:10:54 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:10:54 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:12:46 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:12:46 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:13:51 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:13:51 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:14:48 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:14:48 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:15:45 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:15:45 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:18:35 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:18:35 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:18:38 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:18:38 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:19:11 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:19:11 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:22:18 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:22:18 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:25:19 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:25:19 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:35:06 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:35:06 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:37:45 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:37:45 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:40:45 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:40:45 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:42:19 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:42:19 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 19:46:11 Europe/Berlin] === New Request ===
+[17-Nov-2025 19:46:11 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 20:08:31 Europe/Berlin] === New Request ===
+[17-Nov-2025 20:08:31 Europe/Berlin] Request URI: /properties.php?action=list
+[17-Nov-2025 20:11:38 Europe/Berlin] === New Request ===
+[17-Nov-2025 20:11:38 Europe/Berlin] Request URI: /properties.php?action=list
