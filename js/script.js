@@ -2,8 +2,9 @@ function updateDarkModeUI(isDarkMode) {
     document.body.classList.toggle('dark-mode', isDarkMode);
     const icon = document.querySelector('#darkModeToggle i');
     const text = document.getElementById('darkModeText');
+    const lang = (typeof translations !== 'undefined' && translations[currentLanguage]) || translations.en;
     if (icon) icon.className = isDarkMode ? 'fas fa-sun' : 'fas fa-moon';
-    if (text) text.textContent = isDarkMode ? 'Light Mode' : 'Dark Mode';
+    if (text) text.textContent = isDarkMode ? lang.lightMode : lang.darkMode;
 }
 
 function toggleDarkMode() {
@@ -296,6 +297,8 @@ const translations = {
         switchToUSD: 'Switch to USD',
         kurdish: 'کوردی',
         english: 'English',
+        darkMode: 'Dark Mode',
+        lightMode: 'Light Mode',
         
         heroTitle: 'Find Your Dream Home',
         heroSubtitle: 'Discover the perfect property that matches your lifestyle',
@@ -362,6 +365,8 @@ const translations = {
         switchToUSD: 'گۆڕین بۆ دۆلار',
         kurdish: 'کوردی',
         english: 'English',
+        darkMode: 'دۆخی تاریک',
+        lightMode: 'دۆخی ڕووناک',
         
         heroTitle: 'خانووی خەونەکانت بدۆزەوە',
         heroSubtitle: 'خانوویەکی گونجاو بدۆزەوە کە گونجاو بێت بۆ ژیانت',
@@ -465,8 +470,7 @@ function toggleLanguage() {
     document.documentElement.lang = currentLanguage;
     document.documentElement.dir = currentLanguage === 'ckb' ? 'rtl' : 'ltr';
     applyLanguage();
-    updateCurrencyButton();
-    
+
     updatePropertyCards();
     
     const modal = document.getElementById('propertyModal');
@@ -528,11 +532,14 @@ function applyLanguage() {
     // Map toggle
     const mapToggleBtn = document.getElementById('mapToggle');
     if (mapToggleBtn) {
-        const isMapVisible = mapContainer.style.display !== 'none';
+        const isMapVisible = mapContainer ? mapContainer.style.display !== 'none' : false;
         mapToggleBtn.innerHTML = `<i class="fas fa-${isMapVisible ? 'list' : 'map'}"></i> ${isMapVisible ? lang.showList : lang.showMap}`;
     }
     
-    document.querySelector('.featured h2').textContent = lang.featured;
+    const featuredHeading = document.querySelector('.featured h2');
+    if (featuredHeading) {
+        featuredHeading.textContent = lang.featured;
+    }
     
     const aboutSection = document.querySelector('.about');
     if (aboutSection) {
@@ -584,8 +591,30 @@ function applyLanguage() {
     updatePropertyCards();
     
     updateCurrencyButton();
-    
-    // Language button
+    updateDarkModeUI(document.body.classList.contains('dark-mode'));
+    updateLanguageButton();
+}
+
+function updatePropertyCards() {
+    const lang = translations[currentLanguage];
+    document.querySelectorAll('#propertiesGrid .property-card').forEach(card => {
+        const button = card.querySelector('.property-info .btn');
+        if (button) {
+            button.textContent = lang.viewDetails;
+        }
+    });
+
+    const noResults = document.querySelector('#propertiesGrid .no-results');
+    if (noResults) {
+        const heading = noResults.querySelector('h3');
+        if (heading) heading.textContent = lang.noResults;
+        const paragraph = noResults.querySelector('p');
+        if (paragraph) paragraph.textContent = lang.adjustFilters;
+    }
+}
+
+function updateLanguageButton() {
+    const lang = translations[currentLanguage];
     const languageButton = document.getElementById('languageToggle');
     if (languageButton) {
         languageButton.innerHTML = `<i class="fas fa-language"></i> ${currentLanguage === 'en' ? lang.kurdish : lang.english}`;
